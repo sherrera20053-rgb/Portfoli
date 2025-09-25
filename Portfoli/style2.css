@@ -1,13 +1,12 @@
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
-
+    --ff-primary:  "Noto Serif", serif;
+    --ff-secondary: "Bitcount Grid Single Ink", system-ui;
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #00e5ff;
+    --clr-light: #000000;
+    --clr-dark: #A60F0F;
+    --clr-accent: #00d9ff;
 
     --fs-h1: 3rem; 
     --fs-h2: 2,25rem; 
@@ -57,4 +56,31 @@ h3{
 h1,h2,h3{
  line-height: 1,1;
  margin: 0;
+}
+
+strong{
+    font-weight: var(--fw-bold);
+}
+.section{
+    padding: 5em 2em;
+}
+
+.section-title{
+    margin-bottom: 0,25;
+}
+
+.section-title-intro{
+    display: block;
+}
+
+.section-subtitle{
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section-subtitle-intro,
+.section-subtitle-about{
+    background-color: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
 }
