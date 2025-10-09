@@ -1,104 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/d4b248a63b.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style3.css">
     <title>Samuel Herrera</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./style3.css">
+
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/d4b248a63b.js" crossorigin="anonymous"></script>
+
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single+Ink:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="./script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Bitcount+Grid+Single+Ink:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="./script.js" defer></script>
 </head>
+
 <body>
+    <!-- HEADER -->
     <header>
         <div class="logo">
-            <img class="flip-scale-up-hor" src="./img/logo.png" alt="">
+            <img class="flip-scale-up-hor" src="./img/logo.png" alt="Logo Samuel Herrera">
         </div>
-        <button class="nav-toogle">
+        <button class="nav-toogle" aria-label="Toggle navigation">
             <span class="burguer"></span>
         </button>
         <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#my-services">My Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="#my-work">My Work</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">My Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work">My Work</a></li>
             </ul>
         </nav>
     </header>
-    <section class="intro" id="home"> 
+
+    <!-- INTRO -->
+    <section class="intro" id="home">
         <h1 class="section-title section-title-intro">Hi, I'm <strong>Samuel Herrera</strong></h1>
         <p class="section-subtitle section-subtitle-intro">Mecánico & Extrabajador en Chernóbil</p>
-        <img src="./img/yo.jpeg" alt="" class="intro-img">
-    </section>  
+        <img src="./img/yo.jpeg" alt="Samuel Herrera" class="intro-img">
+    </section>
 
+    <!-- MY SERVICES -->
     <section class="my-services" id="services">
-        <h2 class="section-title section-title-services">What I do</h2>
+        <h2 class="section-title section-title-services">What I Do</h2>
         <div class="services">
             <div class="service">
                 <h3 class="section-subtitle">Mecánico de motos</h3>
-                <p>Soy mecánico de motos, especializado en el mantenimiento, reparación y puesta a punto de todo tipo de motocicletas. Me encargo de diagnosticar fallas, ajustar motores y garantizar el buen funcionamiento del vehículo. Mi objetivo es brindar un servicio seguro, confiable y de calidad a cada cliente</p>
+                <p>Soy mecánico de motos, especializado en el mantenimiento, reparación y puesta a punto de todo tipo de motocicletas. Me encargo de diagnosticar fallas, ajustar motores y garantizar el buen funcionamiento del vehículo. Mi objetivo es brindar un servicio seguro, confiable y de calidad a cada cliente.</p>
             </div>
-             <div class="service">
-                <h3 class="section-subtitle">Integrante de alcoholicos anonimos</h3>
-                <p>Soy integrante de Alcohólicos Anónimos, un espacio de apoyo mutuo donde comparto mi experiencia en el proceso de recuperación. Trabajo día a día en mantenerme sobrio y en ayudar a otros que buscan superar la adicción. Mi compromiso es con el crecimiento personal y la serenidad</p>
+            <div class="service">
+                <h3 class="section-subtitle">Integrante de Alcohólicos Anónimos</h3>
+                <p>Soy integrante de Alcohólicos Anónimos, un espacio de apoyo mutuo donde comparto mi experiencia en el proceso de recuperación. Trabajo día a día en mantenerme sobrio y en ayudar a otros que buscan superar la adicción. Mi compromiso es con el crecimiento personal y la serenidad.</p>
             </div>
             <div class="service">
                 <h3 class="section-subtitle">Pescador de tiburones</h3>
                 <p>Soy pescador de tiburones, dedicado a la captura en alta mar con conocimiento y respeto por el oficio. Mi trabajo requiere disciplina, fuerza y experiencia para enfrentar los retos del océano. Con esfuerzo diario, sustento a mi familia y mantengo viva una tradición marinera.</p>
             </div>
         </div>
-        <a class= "btn" href= "#work">Works</a>
+        <a class="btn" href="#work">Works</a>
     </section>
-    </section class="about-me" id="about">
-            <h2 class="section-title section-title-about">Who I am</h2>
-            <p class="section-subtitle section-subtitle-about">Soy Samuel, extrabajador en Chernóbil y actual mecánico</p>
-            <div class="services">
-                <p>Trabaje en la planta térmica de Chernóbil y he desarrollado varias malformaciones</p>
-                <p>Ahora intento mejorar mi vida y seguir adelante</p>
-            </div>
-            <img src="./img/IMG_2102.png" alt="" class="about-img">
-    <section>
 
+    <!-- ABOUT ME -->
+    <section class="about" id="about">
+        <h2 class="section-title section-title-about">Who I am</h2>
+        <p class="section-subtitle section-subtitle-about">Soy Samuel, extrabajador en Chernóbil y actual mecánico</p>
+        <div class="about-content">
+            <p>Trabajé en la planta térmica de Chernóbil y he desarrollado varias malformaciones.</p>
+            <p>Ahora intento mejorar mi vida y seguir adelante.</p>
+        </div>
+        <img src="./img/IMG_2102.png" alt="Foto de Samuel Herrera" class="about-img">
     </section>
+
+    <!-- MY WORK -->
     <section class="my-work" id="work">
         <h2 class="section-title section-title-work">Motos</h2>
-        <p class="section-subtitle section-subtitle-work">XXXXXXXXXXXX</p>
-        <div>
-            <a class="portfolio-item"href=""><img class="portfolio-img .slide-rotate-hor-top"src="./img/scooter.jpg" alt=""></a>
-            <a class="portfolio-item"href=""><img class="portfolio-img .flip-scale-up-hor"src="./img/r.jpg" alt=""></a>
-            <a class="portfolio-item"href=""><img class="portfolio-img .rotate-scale-up"src="./img/perro.jpg" alt=""></a>
-            <a class="portfolio-item"href=""><img class="portfolio-img .wobble-hor-bottom"src="./img/motocros.jpg" alt=""></a>
-            <a class="portfolio-item"href=""><img class="portfolio-img .shake-horizontal"src="./img/naked.jpg" alt=""></a>
-            <a class="portfolio-item"href=""><img class="portfolio-img"src="./img/clasica2.jpg" alt=""></a>
-            <a class="portfolio-item"href=""><img class="portfolio-img"src="./img/clasica.jpg" alt=""></a>
-            <a class="portfolio-item"href=""><img class="portfolio-img"src="./img/8.jpg" alt=""></a>
-            <a class="portfolio-item"href=""><img class="portfolio-img"src="./img/7.jpg" alt=""></a>
-            
+        <p class="section-subtitle section-subtitle-work">Algunos de mis trabajos y pasiones.</p>
+        <div class="portfolio">
+            <a class="portfolio-item" href="#"><img class="portfolio-img slide-rotate-hor-top" src="./img/scooter.jpg" alt="Scooter"></a>
+            <a class="portfolio-item" href="#"><img class="portfolio-img flip-scale-up-hor" src="./img/r.jpg" alt="Moto R"></a>
+            <a class="portfolio-item" href="#"><img class="portfolio-img rotate-scale-up" src="./img/perro.jpg" alt="Perro en moto"></a>
+            <a class="portfolio-item" href="#"><img class="portfolio-img wobble-hor-bottom" src="./img/motocros.jpg" alt="Motocross"></a>
+            <a class="portfolio-item" href="#"><img class="portfolio-img shake-horizontal" src="./img/naked.jpg" alt="Moto naked"></a>
+            <a class="portfolio-item" href="#"><img class="portfolio-img" src="./img/clasica2.jpg" alt="Moto clásica 2"></a>
+            <a class="portfolio-item" href="#"><img class="portfolio-img" src="./img/clasica.jpg" alt="Moto clásica"></a>
+            <a class="portfolio-item" href="#"><img class="portfolio-img" src="./img/8.jpg" alt="Moto 8"></a>
+            <a class="portfolio-item" href="#"><img class="portfolio-img" src="./img/7.jpg" alt="Moto 7"></a>
         </div>
-
     </section>
-</body>
-</html>
 
-<html lang="en">
-<body>
- <section id="work">
-    <div>
- </section>  
- <footer class="footer">
-    <a href="mailto:sherrera20053@iesjoanramis.org" class="footer-link">sherrera20053@iesjoanramis</a>
-    <ul class="social-list">
-        <li class="social-list-item"><a class="social-list-link" href="https://github.com/sherrera20053-rgb"><i class="fa-brands fa-github"></i></a></li>
-        <li class="social-list-item"><a class="social-list-link" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-        <li class="social-list-item"><a class="social-list-link" href="https://www.reddit.com/"><i class="fa-brands fa-reddit"></i></a></li>
-        <li class="social-list-item"><a class="social-list-link" href="https://x.com/?lang=es"><i class="fa-brands fa-x-twitter"></i></a></li>
-    </ul>
- </footer>     
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="mailto:sherrera20053@iesjoanramis.org" class="footer-link">sherrera20053@iesjoanramis.org</a>
+        <ul class="social-list">
+            <li class="social-list-item"><a class="social-list-link" href="https://github.com/sherrera20053-rgb"><i class="fa-brands fa-github"></i></a></li>
+            <li class="social-list-item"><a class="social-list-link" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="social-list-item"><a class="social-list-link" href="https://www.reddit.com/"><i class="fa-brands fa-reddit"></i></a></li>
+            <li class="social-list-item"><a class="social-list-link" href="https://x.com/?lang=es"><i class="fa-brands fa-x-twitter"></i></a></li>
+        </ul>
+    </footer>
 </body>
 </html>
