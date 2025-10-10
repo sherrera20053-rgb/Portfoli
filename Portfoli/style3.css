@@ -91,6 +91,7 @@ h3 { font-size: var(--fs-h3); }
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
   display: inline-block;
+  
 }
 
 /* ========== Buttons ========== */
@@ -145,8 +146,8 @@ h3 { font-size: var(--fs-h3); }
     grid-row: 2;
     text-align: right;
     position: relative;
-    left: -1.5em;
-    width: calc(100% + 1.5em);
+   
+    width: 100%;
     align-self: start;
   }
 }
@@ -155,9 +156,10 @@ h3 { font-size: var(--fs-h3); }
 .my-services {
   text-align: center;
   color: var(--clr-dark);
-  background-image: url('./img/background.png');
+  background-image: url('./img/fondo.jpeg');
   background-size: cover;
   background-blend-mode: multiply;
+  background-position: center;
 }
 
 .section-title-services {
@@ -229,8 +231,7 @@ h3 { font-size: var(--fs-h3); }
     grid-row: 2;
     text-align: right;
     position: relative;
-    left: -1.5em;
-    width: calc(100% + 1.5em);
+    width: 100%;
     align-self: start;
   }
 }
@@ -405,7 +406,7 @@ h3 { font-size: var(--fs-h3); }
 }
 
 .nav-open .burguer::before {
-  transform: rotate(90deg);
+  transform: rotate(90deg) translateX(-6px);
 }
 
 .nav-open .burguer::after {
@@ -431,4 +432,150 @@ h3 { font-size: var(--fs-h3); }
 
 .shake-horizontal {
   animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+/* === PORTFOLIO IMAGES (SECCIÓN MOTOS) === */
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr)); /* cuadrícula flexible */
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.portfolio-item {
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Asegura que todas las imágenes tengan el mismo tamaño */
+.portfolio-img {
+  width: 100%;
+  height: 220px;              /* puedes ajustar esta altura a gusto */
+  object-fit: cover;          /* recorta manteniendo proporciones */
+  border-radius: 12px;
+  display: block;
+}
+/* === PORTFOLIO IMAGES (SECCIÓN MOTOS) === */
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.portfolio-item {
+  display: block;
+  overflow: hidden;
+  border-radius: 14px;
+  perspective: 1000px;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  transition: all 0.6s ease;
+}
+
+/* === EFECTOS MÁS NOTORIOS Y VARIADOS === */
+.portfolio-item:nth-child(1):hover .portfolio-img {
+  transform: scale(1.2) rotate(8deg);
+  filter: brightness(1.3);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+}
+
+.portfolio-item:nth-child(2):hover .portfolio-img {
+  transform: rotateY(360deg) scale(1.1);
+}
+
+.portfolio-item:nth-child(3):hover .portfolio-img {
+  animation: bounceUp 0.8s ease;
+  filter: contrast(1.3);
+}
+
+.portfolio-item:nth-child(4):hover .portfolio-img {
+  transform: rotate(-10deg) scale(1.15);
+  box-shadow: 0 0 25px rgba(0, 255, 0, 0.4);
+}
+
+.portfolio-item:nth-child(5):hover .portfolio-img {
+  animation: pulseZoom 1s ease infinite alternate;
+  filter: saturate(1.6);
+}
+
+.portfolio-item:nth-child(6):hover .portfolio-img {
+  transform: rotateX(25deg) scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 150, 255, 0.5);
+}
+
+.portfolio-item:nth-child(7):hover .portfolio-img {
+  animation: wiggle 1s ease;
+}
+
+.portfolio-item:nth-child(8):hover .portfolio-img {
+  transform: translateY(-15px) scale(1.1);
+  filter: hue-rotate(60deg);
+}
+
+.portfolio-item:nth-child(9):hover .portfolio-img {
+  animation: crazySpin 1.2s ease;
+}
+
+/* === ANIMACIONES === */
+
+/* Rebote hacia arriba */
+@keyframes bounceUp {
+  0% { transform: translateY(0); }
+  40% { transform: translateY(-25px) scale(1.1); }
+  70% { transform: translateY(5px) scale(1.05); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+/* Pulso con zoom suave */
+@keyframes pulseZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.2); }
+}
+
+/* Temblores tipo “wiggle” */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  15% { transform: rotate(3deg); }
+  30% { transform: rotate(-3deg); }
+  45% { transform: rotate(2deg); }
+  60% { transform: rotate(-2deg); }
+  75% { transform: rotate(1deg); }
+  90% { transform: rotate(-1deg); }
+}
+
+/* Giro loco divertido */
+@keyframes crazySpin {
+  0% { transform: rotate(0) scale(1); }
+  50% { transform: rotate(360deg) scale(1.3); }
+  100% { transform: rotate(720deg) scale(1); }
+}
+/* === LOGO ANIMADO === */
+.logo img {
+  width: 120px;                /* ajusta según el tamaño actual */
+  height: auto;
+  border-radius: 50%;          /* si tu logo es circular */
+  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.2) rotate(5deg);    /* se agranda y gira ligeramente */
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.4); /* halo suave */
+  filter: brightness(1.3);               /* un poco más brillante */
 }
